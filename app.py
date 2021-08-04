@@ -6,7 +6,7 @@ from urllib.request import urlopen as uReq
 
 app = Flask(__name__)
 
-@app.route('/',methods=['GET'])  # route to display the home page
+@app.route('/',methods=['GET'])  # route to display the home pages
 @cross_origin()
 def homePage():
     return render_template("index.html")
